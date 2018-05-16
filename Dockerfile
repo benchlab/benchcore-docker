@@ -8,8 +8,8 @@ RUN apk update && \
 VOLUME [ /benchcore ]
 WORKDIR /benchcore
 EXPOSE 6614 6618 6619 6620
-ENTRYPOINT ["/usr/bin/benchchain-testnet.sh"]
+ENTRYPOINT ["/usr/bin/benchcore.sh"]
 CMD ["node", "--proxy_app", "benchsat"]
 STOPSIGNAL SIGTERM
 
-COPY benchchain-testnet.sh /usr/bin/benchchain-testnet.sh
+COPY benchcore.sh /usr/bin/benchcore.sh
