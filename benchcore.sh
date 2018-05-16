@@ -5,7 +5,7 @@
 ##
 BENCH=/benchcore/${BENCH:-benchcore}
 ID=${ID:-0}
-LOG=${LOG:-benchcore-testnet.log}
+LOG=${LOG:-benchcore.log}
 
 ##
 ## Install BenchCore Application On Linux
